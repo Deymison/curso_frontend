@@ -1,0 +1,164 @@
+/*
+GERAL*/
+body {
+	font-family: "Open sans",Helvetica, Arial, sans-serif;
+	color: black;
+}
+h1, h2, h3 {
+	margin: 0;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.botao {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #636B6F;
+	font-size: .9em;
+	border-radius: 3px;
+
+}
+/* NAVEGACAO*/
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/projeto.jpg');
+}
+nav > a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	font-size: 26px;
+	font-family: Pacifico, serif;
+}
+nav  ul {
+	list-style: none;
+	padding: 0;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+nav ul li {
+	width: 100%;
+	text-align: center;
+}
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #1f1e1e;
+}
+header {
+	background-image: url('../_imagens/tec-fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #908f96;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+header p {
+	margin-bottom: 2em;
+}
+/*SOBRE*/
+#sobre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: white;
+	padding: 0 20px 20px;
+	background-image: url('../_imagens/fundo.jpg');
+}
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+#projetos {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#projetos #arte {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/lapis.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	color: #000000;
+}
+#projetos #tecno {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/tec-img.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	color: #000000;
+}
+#projetos #game {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/game.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	color: #ffffff;
+}
+#projetos section {
+	margin-bottom: 10px;
+}
+#galeria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+}
+#galeria h2 {
+	margin-bottom: 20px;
+}
+#galeria img {
+	width: 100%;
+}
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+}
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #636B6F;
+	width: 100%;
+}
+/*
+MIDEA QUERIES
+*/
+@media screen and (min-width: 768px) {
+	/*
+	NAVEGACAO
+	*/
+	nav {
+		flex-direction: row;
+		justify-content: space-around;	
+	}
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+}
