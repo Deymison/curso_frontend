@@ -29,11 +29,12 @@ nav > a {
 	color: rgb(0, 0, 0);
 	font-weight: 700;
 	font-size: 26px;
-	font-family: Pacifico, serif;
+	font-family: "Pacifico", serif;
 }
 nav  ul {
 	list-style: none;
 	padding: 0;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
@@ -54,7 +55,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	color: #908f96;
+	color: #ebe7fd;
 	display: flex;
 	flex-direction:column;
 	align-items: center;
@@ -70,7 +71,7 @@ header p {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	color: white;
+	color: #636B6F;
 	padding: 0 20px 20px;
 	background-image: url('../_imagens/fundo.jpg');
 }
@@ -78,7 +79,12 @@ header p {
 	margin-bottom: 2.5em;
 	max-width: 1000px;
 }
+/*
+PROJETOS
+*/
 #projetos {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: #636B6F;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -93,7 +99,29 @@ header p {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
+	height: 120px;
 	color: #000000;
+}
+#projetos #arte p {
+	text-align: center;
+	margin-top: 70px;
+}
+
+#projetos #game {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/game.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 120px;
+	color: #ffffff;
+}
+#projetos #game p {
+	text-align: center;
+	margin-top: 70px;
 }
 #projetos #tecno {
 	padding: 10px;
@@ -104,22 +132,20 @@ header p {
 	background-position: center;
 	background-size: cover;
 	width: 100%;
+	height: 120px;
 	color: #000000;
 }
-#projetos #game {
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	background-image: url('../_imagens/game.jpg');
-	background-position: center;
-	background-size: cover;
-	width: 100%;
-	color: #ffffff;
+#projetos #tecno p {
+	text-align: center;
+	margin-top: 8px;
 }
+
 #projetos section {
 	margin-bottom: 10px;
 }
+/*
+GALERIA
+*/
 #galeria {
 	display: flex;
 	flex-direction: column;
@@ -131,8 +157,37 @@ header p {
 	margin-bottom: 20px;
 }
 #galeria img {
+	margin-top: 2px;
 	width: 100%;
 }
+/*
+CADASTRO
+*/
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	background-color: #309AAB;
+	margin-top: 20px;
+}
+form h2 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: rgb(2, 4, 27);
+	padding-top: 20px;
+}
+form h4 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: rgb(2, 4, 27);
+}
+form input {
+	padding: 0px;
+	margin: 0px;
+}
+
+/*
+CONTATO
+*/
 #contato {
 	display: flex;
 	flex-direction: column;
@@ -145,6 +200,10 @@ footer {
 	padding: 10px;
 	background-color: #636B6F;
 	width: 100%;
+}
+footer p {
+	padding: 2px;
+	margin: 0px;
 }
 /*
 MIDEA QUERIES
@@ -160,5 +219,67 @@ MIDEA QUERIES
 	nav ul {
 		flex-direction: row;
 		width: 70%;
+	}
+	/*
+	CABEÇALHO
+	*/
+	header {
+		height: 600px;
+		height: 100vh;
+		justify-content: center;
+	}
+	#sobre {
+		height: 400px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+	/*
+	PROJETOS
+	*/
+	#projetos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 2000px;
+		margin: 0 auto;
+	}
+	#projetos h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#projetos section {
+		flex-grow: 1;
+		flex-basis: 250px;
+		padding: 0 10px;
+		margin: 0 10px;
+		min-height: 250px;
+	}
+	#projetos section p {
+		text-align: center;
+		margin-top: 180px;
+	}
+	/*
+	GALERIA
+	*/
+	#galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#galeria h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#galeria img {
+		
+		width: 33%;
+		margin: 2px;
+	}
+	/*
+	CADASTRO
+	*/
+	form {
+		flex-direction: column;
+		align-items: left;
 	}
 }
