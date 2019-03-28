@@ -164,18 +164,28 @@ GALERIA
 CADASTRO
 */
 form {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	align-items: center;
-	background-color: #309AAB;
+	width: 280px;
+	margin: auto;
+	background-color: #270d0db6;
+	padding: 10px 20px;
+	box-sizing: border-box;
 	margin-top: 20px;
+	border-image-slice: unset;
 }
-form h2 {
+	
+/*form h2 {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	color: rgb(2, 4, 27);
 	padding-top: 20px;
 }
+//display: flex;
+	flex-direction: column;
+	width: 450px;
+	align-items: center;
+	background-color: #309AAB;
+	margin-top: 20px;
+	margin: auto;//
+
 form h4 {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	color: rgb(2, 4, 27);
@@ -183,7 +193,7 @@ form h4 {
 form input {
 	padding: 0px;
 	margin: 0px;
-}
+}*/
 
 /*
 CONTATO
