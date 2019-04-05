@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*estilos da páginas*/
+header {
+    background-color: red;
+
+}
+nav#navbar {
+    background-color: red;
+}
+nav#menu li {
+    background-color: red;
+}
+nav#menu a {
+
+}
+header.titulo {
+
+}
+header.subtitulo {
+
+}
